@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support | My Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Support</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I place an order?</h3>
+                <p>Go to the <a href="products.html">Products</a> page, select your items, and click "Add to Cart." Proceed to checkout when ready.</p>
+            </div>
+        </section>
+
+        <!-- Contact Support Form -->
+        <section class="support-form">
+            <h2>Need More Help?</h2>
+            <form id="supportForm" action="https://formspree.io/f/mvgaeyel" method="POST">
+  <input type="text" name="name" id="name" placeholder="Your Name" required />
+  <input type="email" name="email" id="email" placeholder="Email" required />
+  <select name="issue" id="issue" required>
+    <option value="">Select an issue</option>
+    <option value="order">Order Issue</option>
+    <option value="product">Product Question</option>
+    <option value="other">Other</option>
+  </select>
+  <textarea name="description" id="description" placeholder="Describe your issue..." required></textarea>
+  <button type="submit">Submit Request</button>
+            </form>
+
+        </section>
+
+        <!-- Live Chat Button (Optional) -->
+        <div class="live-chat">
+            <button onclick="alert('Chat service will open in a real website!')">💬 Live Chat</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Green Herb | Email: libuserx@gmail.com</p>
+    </footer>
+</body>
+</html>
